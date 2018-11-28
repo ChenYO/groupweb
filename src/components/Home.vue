@@ -1,17 +1,22 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <h1>{{ msg }}</h1>
     <router-link to="/About">About</router-link>
-    <btn type="primary">Primary</btn>
+    <btn type="primary" @click="sayHello">Primary</btn>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'About',
+  name: 'Home',
   data () {
     return {
       msg: 'Welcome to Home'
+    }
+  },
+  methods: {
+    sayHello: function() {
+      alert("Hello")
     }
   }
 }
