@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <router-link to="/About">About</router-link>
+    <btn type="primary">Primary</btn>
   </div>
 </template>
 
